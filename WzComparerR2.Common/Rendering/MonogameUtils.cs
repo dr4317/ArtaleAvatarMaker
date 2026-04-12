@@ -6,13 +6,13 @@ using Microsoft.Xna.Framework.Graphics;
 using SharpDX.Direct3D11;
 using Texture2D = Microsoft.Xna.Framework.Graphics.Texture2D;
 using WzComparerR2.WzLib;
-using Color =Microsoft.Xna.Framework.Color;
+using Color = Microsoft.Xna.Framework.Color;
 
 namespace WzComparerR2.Rendering
 {
     public static class MonogameUtils
     {
-        public static Color ToXnaColor(this GdipColor color)
+        public static Microsoft.Xna.Framework.Color ToXnaColor(this GdipColor color)
         {
             return new Color(color.R, color.G, color.B, color.A);
         }
@@ -53,11 +53,11 @@ namespace WzComparerR2.Rendering
         public static Texture2D ToTexture(this System.Drawing.Bitmap bitmap, GraphicsDevice device)
         {
             var t2d = new Texture2D(device, bitmap.Width, bitmap.Height, false, SurfaceFormat.Bgra32);
-            bitmap.ToTexture(t2d,Microsoft.Xna.Framework.Point.Zero);
+            bitmap.ToTexture(t2d, Microsoft.Xna.Framework.Point.Zero);
             return t2d;
         }
 
-        public static void ToTexture(this System.Drawing.Bitmap bitmap, Texture2D texture,Microsoft.Xna.Framework.Point origin)
+        public static void ToTexture(this System.Drawing.Bitmap bitmap, Texture2D texture, Microsoft.Xna.Framework.Point origin)
         {
             var rect = new System.Drawing.Rectangle(0, 0, bitmap.Width, bitmap.Height);
             var bmpData = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadOnly,
