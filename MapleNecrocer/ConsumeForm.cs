@@ -94,6 +94,8 @@ public partial class ConsumeForm : Form
         ImageGrid.Sort();
         Win32.SendMessage(ImageGrid.Handle, true);
         ImageGrid.Refresh();
+
+        DpiScalingHelper.Apply(this);
     }
 
     private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)

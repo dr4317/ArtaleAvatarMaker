@@ -746,6 +746,8 @@ public partial class MainForm : Form
         float dpiY = graphics.DpiY;
         DPIUtil.dpiX = dpiX;
         DPIUtil.dpiY = dpiY;
+
+        DpiScalingHelper.Apply(this);
     }
 
     private void OpenFolderButton_Click(object sender, EventArgs e)

@@ -84,6 +84,8 @@ public partial class NpcForm : Form
         Win32.SendMessage(NpcListGrid.Handle, true);
         NpcListGrid.Refresh();
 
+        DpiScalingHelper.Apply(this);
+
 
 
     }

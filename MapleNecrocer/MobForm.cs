@@ -97,6 +97,8 @@ public partial class MobForm : Form
         }
         Win32.SendMessage(MobListGrid.Handle, true);
         MobListGrid.Refresh();
+
+        DpiScalingHelper.Apply(this);
     }
 
     private void textBox2_TextChanged(object sender, EventArgs e)

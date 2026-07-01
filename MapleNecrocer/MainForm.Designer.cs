@@ -383,7 +383,7 @@ namespace MapleNecrocer
             // 
             // MainForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1175, 913);
             Controls.Add(label4);
             Controls.Add(panel1);

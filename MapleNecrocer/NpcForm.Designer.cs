@@ -124,7 +124,7 @@
             // 
             // NpcForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(272, 692);
             Controls.Add(tabControl1);
             Controls.Add(pictureBox1);

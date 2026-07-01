@@ -144,7 +144,7 @@
             // 
             // MobForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(272, 644);
             Controls.Add(textBox2);
             Controls.Add(label2);

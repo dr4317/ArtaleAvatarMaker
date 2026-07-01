@@ -159,7 +159,7 @@
             // 
             // ConsumeForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(432, 650);
             Controls.Add(panel1);
             Controls.Add(tabControl1);

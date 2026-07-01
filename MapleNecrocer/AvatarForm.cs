@@ -280,6 +280,8 @@ public partial class AvatarForm : Form
     private void AvatarForm_Load(object sender, EventArgs e)
     {
 
+        DpiScalingHelper.Apply(this);
+
         this.FormClosing += (s, e1) =>
         {
             this.Hide();

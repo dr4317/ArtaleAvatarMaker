@@ -1062,7 +1062,7 @@
             // 
             // AvatarForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1130, 813);
             Controls.Add(EarListBox);
             Controls.Add(label5);
